@@ -1,140 +1,416 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jéssica Carvalho | Dev Front-end</title>
+
+  <title>Maíra Vidal | Estratégia Patrimonial e Consórcio</title>
+
+  <!-- SEO  -->
+  <meta property="og:title" content="Maíra Vidal | Estratégia Patrimonial" />
+  <meta property="og:description"
+    content="Consultoria estratégica para conquistar patrimônio com clareza e segurança." />
+  <meta property="og:image" content="https://mairavidalconsultoria.com.br/galeria/foto-header.jpeg" />
+  <meta property="og:url" content="https://mairavidalconsultoria.com.br" />
+  <meta property="og:type" content="website" />
+
+  <!-- PERFORMANCE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- GOOGLE FONTS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
+<!--json-ld-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Maíra Vidal Consultoria",
+  "image": "https://mairavidalconsultoria.com.br/galeria/foto-header.jpeg",
+  "@id": "https://mairavidalconsultoria.com.br",
+  "url": "https://mairavidalconsultoria.com.br",
+  "telephone": "+5515988182604",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sorocaba",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "areaServed": "Brasil",
+  "sameAs": [
+    "https://www.instagram.com/mairabvidal",
+    "https://www.tiktok.com/@mairabvidal"
+  ]
+}
+</script>
+
 <body>
-  <header>
-    <div class="logo">Jéssica<span class="emphasis">.</span></div>
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+
+  <!-- HEADER -->
+  <header class="header" id="topo">
+    <div class="container nav">
+      <a href="#topo" class="logo">Maíra Vidal</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="menu" id="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#solucoes">Soluções</a>
+        <a href="#conteudos">Conteúdos</a>
+        <a href="#contato" class="btn-menu">Contato</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="hero">
-      <article>
-        <p>Olá, eu sou a Jéssica</p>
-        <h1 class="title">
-          <span class="emphasis">Front</span>end<br />
-          Developer
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+
+    <div class="container hero-grid">
+
+      <div class="hero-texto">
+        <span class="mini-tag">Consultoria estratégica e patrimonial</span>
+
+        <h1>
+          Conquiste seu patrimônio com mais clareza, segurança e direção
         </h1>
-        <p>Entusiasta de tecnologia e desenvolvimento web.</p>
-        <div class="buttons">
-          <a href="#contato" class="btn primary">Contato</a>
-          <a href="#projetos" class="btn outline">Projetos</a>
+
+        <p class="hero-descricao">
+          Um atendimento próximo e estratégico para quem deseja sair do aluguel,
+          investir melhor e tomar decisões financeiras com mais confiança.
+        </p>
+
+        <div class="hero-botoes">
+          <a href="#contato" class="btn btn-primary">Agendar atendimento</a>
+          <a href="#solucoes" class="btn btn-outline">Conhecer soluções</a>
         </div>
-      </article>
-      <div class="frame">
-        <img src="fotojessica.jpg" alt="Foto de Jéssica" />
+        <p class="hero-frase mobile-overlay">
+          Clareza para decidir hoje. Segurança para construir o amanhã.
+        </p>
       </div>
-    </section>
 
-    <section id="sobre" class="fade-in">
-      <h2>Sobre mim</h2>
-      <p>
-        Sou desenvolvedora front-end em constante aprendizado. Tenho base sólida
-        em HTML, CSS e JavaScript, e estou iniciando meus estudos em React e
-        Angular. Formada em Tecnologia em Sistemas para Internet,
-        estou construindo meu espaço na área tech com dedicação.
-      </p>
-    </section> 
 
-  <section id="projetos" class="projetos fade-in">
-  <h2>Meus Projetos</h2>
 
-  <div class="projetos-container">
+      <div class="hero-imagem">
+        <div class="imagem-wrapper">
+          <img src="galeria/foto-header.jpeg" fetchpriority="high" loading="eager" alt="Maíra Vidal" />
+        </div>
+      </div>
 
-    <div class="projeto-card">
-      <h3>Lote 7 | Condomínio Portofino</h3>
+    </div>
+  </section>
 
-      <p>
-        Landing page responsiva desenvolvida para apresentação de imóvel de alto padrão, com foco em conversão e experiência do usuário.
-      </p>
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre-grid">
+      <div class="sobre-imagem">
+        <div class="sobre-imagem-box">
+          <img src="galeria/foto1.jpeg" alt="Maíra Vidal" />
+        </div>
+      </div>
 
-      <div class="links-projeto">
-        <a href="https://www.lote7condominioportofino.com.br/" target="_blank">
-          🔗 Ver projeto
+      <div class="sobre-texto">
+        <span class="section-tag">Sobre</span>
+
+        <h2>Um atendimento que une estratégia, escuta e direção</h2>
+
+        <p>
+          Mais do que apresentar opções, o foco está em entender o seu momento,
+          seus objetivos e o que realmente faz sentido para a sua realidade.
+        </p>
+
+        <p>
+          Cada decisão é construída com estratégia, transparência e clareza,
+          sempre respeitando o seu contexto e suas possibilidades.
+        </p>
+
+        <p class="sobre-destaque">
+          Não se trata apenas de crédito, mas de construir patrimônio com inteligência e direção.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVESTIMENTO -->
+  <section class="investimento">
+    <div class="container investimento-grid">
+
+      <div class="investimento-texto">
+        <span class="section-tag">Investimento</span>
+
+        <h2>Construa patrimônio com estratégia e visão</h2>
+
+        <p>
+          O consórcio pode ser utilizado não apenas para aquisição,
+          mas como uma ferramenta estratégica para gerar oportunidades
+          e ampliar seu patrimônio.
+        </p>
+
+        <p>
+          Com planejamento e orientação adequada, é possível transformar
+          crédito em crescimento financeiro.
+        </p>
+
+        <p class="sobre-destaque">
+          Mais de 15 anos de experiência em consórcios e crédito,
+          ajudando pessoas a conquistarem patrimônio com estratégia.
+        </p>
+
+        <a href="#contato" class="btn btn-primary">
+          Quero montar minha estratégia
         </a>
+      </div>
 
-        <a href="https://github.com/jescarvalho/lote7-condominio-portofino" target="_blank">
-          💻 Código
+      <div class="investimento-imagem">
+        <img src="galeria/foto2.jpeg" alt="Investimento imobiliário" />
+      </div>
+
+    </div>
+  </section>
+
+  <!--Educação-->
+  <section class="educacao">
+    <div class="container">
+
+      <div class="section-topo centralizado">
+        <span class="section-tag">Estratégia</span>
+        <h2>Como utilizar cotas com estratégia para construir patrimônio</h2>
+        <p>
+          Mais do que crédito, uma forma inteligente de gerar oportunidades e acelerar conquistas.
+        </p>
+      </div>
+
+      <div class="educacao-grid">
+
+        <div class="educacao-texto">
+          <p>
+            As cotas deixam de ser apenas um meio de aquisição quando são bem estruturadas.
+            Elas se tornam uma estratégia para organizar seu crescimento financeiro com previsibilidade.
+          </p>
+
+          <p>
+            Ao longo de mais de <strong>15 anos</strong>, já ajudei clientes a conquistarem studios em São Paulo
+            utilizando o consórcio de forma <strong>estratégica</strong>. Transformando crédito em oportunidade real.
+          </p>
+        </div>
+
+        <div class="educacao-destaque-box">
+          <p>
+            Cada decisão é pensada com clareza, estratégia e foco no seu momento.
+          </p>
+        </div>
+
+      </div>
+
+      <p class="educacao-frase-final">
+        Construir patrimônio não é sobre pressa. É sobre direção.
+      </p>
+
+      <div class="educacao-cta">
+        <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-primary">
+          Quero entender como aplicar isso na minha realidade
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- DIFERENCIAIS -->
+  <section class="diferenciais" id="diferenciais">
+    <div class="container">
+      <div class="section-topo centralizado">
+        <span class="section-tag">Diferenciais</span>
+        <h2>Uma experiência mais próxima e estratégica</h2>
+        <p>
+          Atendimento pensado para quem valoriza clareza, cuidado e decisões mais inteligentes.
+        </p>
+      </div>
+
+      <div class="diferenciais-grid">
+        <article class="card-diferencial reveal">
+          <div class="icone">✦</div>
+          <h3>Escuta do seu momento</h3>
+          <p>
+            Cada orientação parte da sua realidade, do seu objetivo e do seu tempo.
+          </p>
+        </article>
+
+        <article class="card-diferencial reveal">
+          <div class="icone">✦</div>
+          <h3>Estratégia personalizada</h3>
+          <p>
+            Nada genérico: o direcionamento é pensado para o que faz sentido para você.
+          </p>
+        </article>
+
+        <article class="card-diferencial reveal">
+          <div class="icone">✦</div>
+          <h3>Comunicação clara</h3>
+          <p>
+            Explicações acessíveis, sem complicação e sem excesso de termos técnicos.
+          </p>
+        </article>
+
+        <article class="card-diferencial reveal">
+          <div class="icone">✦</div>
+          <h3>Acompanhamento próximo</h3>
+          <p>
+            Mais segurança em cada etapa, com suporte e visão estratégica.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÕES -->
+  <section class="solucoes" id="solucoes">
+    <div class="container">
+      <div class="section-topo centralizado">
+        <span class="section-tag">Soluções</span>
+        <h2>Alternativas para diferentes objetivos patrimoniais</h2>
+        <p>
+          Soluções apresentadas com clareza para ajudar você a avançar com mais confiança.
+        </p>
+      </div>
+
+      <div class="solucoes-grid">
+        <article class="card-solucao reveal">
+          <span class="solucao-numero">01</span>
+          <h3>Consórcio imobiliário</h3>
+          <p>
+            Para quem deseja estruturar a conquista do imóvel com visão de médio e longo prazo.
+          </p>
+        </article>
+
+        <article class="card-solucao reveal">
+          <span class="solucao-numero">02</span>
+          <h3>Financiamento</h3>
+          <p>
+            Avaliação de possibilidades e cenários para decisões mais seguras.
+          </p>
+        </article>
+
+        <article class="card-solucao reveal">
+          <span class="solucao-numero">03</span>
+          <h3>Home equity</h3>
+          <p>
+            Estratégia para utilizar patrimônio existente como apoio financeiro.
+          </p>
+        </article>
+
+        <article class="card-solucao reveal">
+          <span class="solucao-numero">04</span>
+          <h3>Planejamento patrimonial</h3>
+          <p>
+            Organização dos próximos passos com foco em construção de patrimônio.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEÚDOS -->
+  <section class="conteudos" id="conteudos">
+    <div class="container">
+      <div class="section-topo centralizado">
+        <span class="section-tag">Conteúdos</span>
+        <h2>Dúvidas comuns de quem quer construir patrimônio</h2>
+      </div>
+
+      <div class="conteudos-grid">
+
+        <article class="card-conteudo reveal">
+          <a href="https://wa.me/5515988182604" target="_blank" class="card-link">
+            <div class="conteudo-imagem">
+              <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=900&q=80"
+                alt="Planejamento financeiro" />
+            </div>
+            <div class="conteudo-texto">
+              <h3>Vale a pena fazer consórcio?</h3>
+              <p>Entenda quando o consórcio faz sentido e quando não é a melhor escolha.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card-conteudo reveal">
+          <a href="https://wa.me/5515988182604" target="_blank" class="card-link">
+            <div class="conteudo-imagem">
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80"
+                alt="Imóvel e planejamento" />
+            </div>
+            <div class="conteudo-texto">
+              <h3>Como sair do aluguel com estratégia</h3>
+              <p>Os caminhos possíveis para conquistar seu imóvel com mais segurança.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card-conteudo reveal">
+          <a href="https://wa.me/5515988182604" target="_blank" class="card-link">
+            <div class="conteudo-imagem">
+              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80"
+                alt="Análise financeira" />
+            </div>
+            <div class="conteudo-texto">
+              <h3>Erros comuns ao buscar crédito</h3>
+              <p>O que evitar para não tomar decisões que prejudiquem seu planejamento.</p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contato">
+    <div class="container">
+      <div class="cta-box">
+        <span class="section-tag claro">Próximo passo</span>
+        <h2>Vamos desenhar uma estratégia para o seu patrimônio?</h2>
+        <p>
+          Converse com a Maíra e entenda quais caminhos fazem sentido para o seu momento.
+        </p>
+        <a href="https://wa.me/5515988182604" target="_blank" class="btn btn-light">
+          Falar com a Maíra
         </a>
       </div>
     </div>
+  </section>
 
-    <div class="projeto-card">
-      <h3>Maira Vidal Consultoria</h3>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
 
-      <p>
-        Site institucional responsivo desenvolvido para fortalecer a presença digital da consultoria e apresentar seus serviços.
-      </p>
+      <p>© 2026 Maíra Vidal. Todos os direitos reservados.</p>
 
-      <div class="links-projeto">
-        <a href="https://mairavidalconsultoria.com.br/" target="_blank">
-          🔗 Ver projeto
-        </a>
-
-        <a href="https://github.com/jescarvalho/maira-vidal-consultoria" target="_blank">
-          💻 Código
-        </a>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/mairabvidal?igsh=MTBpb2h4Ymx2dGllaA==" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@mairabvidal" target="_blank">Tiktok</a>
+        <a href="https://wa.me/5515988182604" target="_blank">WhatsApp</a>
       </div>
+
+      <a href="#">Voltar ao topo</a>
+
     </div>
-
-    <div class="projeto-card">
-      <h3>Contador de Cliques</h3>
-
-      <p>
-        Aplicação desenvolvida com HTML, CSS e JavaScript para registrar e exibir cliques em tempo real.
-      </p>
-
-      <div class="links-projeto">
-        <a href="https://jescarvalho.github.io/contador-cliques/" target="_blank">
-          🔗 Ver projeto
-        </a>
-
-        <a href="https://github.com/jescarvalho/contador-cliques" target="_blank">
-          💻 Código
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-    <section id="contato" class="fade-in">
-      <h2>Contato</h2>
-      <p>Quer conversar sobre oportunidades ou projetos? 💬</p>
-      <div class="contato-icones">
-        <a href="mailto:jessica.adecarvalho@gmail.com" title="Email" aria-label="Enviar email">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/jes-carvalho/" target="_blank" title="LinkedIn" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/jescarvalho" target="_blank" title="GitHub" aria-label="GitHub">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Jéssica. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- BOTÃO FIXO -->
+  <a href="https://wa.me/5515988182604" target="_blank" class="whatsapp-fixo">
+    <span class="whats-icon">✦</span>
+    Fale comigo
+  </a>
+
+  <script src="script.js" defer></script>
 </body>
+
 </html>
